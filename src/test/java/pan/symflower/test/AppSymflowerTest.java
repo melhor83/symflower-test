@@ -6,67 +6,74 @@ import static org.junit.Assert.*;
 
 public class AppSymflowerTest {
 	@Test
-	public void main1() {
-		java.lang.String[] args = null;
-		pan.symflower.test.App.main(args);
+	public void checkFib1() {
+		int n = -1;
+		int[] valuesToTest = null;
+		boolean expected = false;
+		boolean actual = pan.symflower.test.App.checkFib(n, valuesToTest);
+
+		assertEquals(expected, actual);
 	}
 
 	@Test
-	public void runCalculation2() {
-		java.lang.Integer idx = null;
-		java.lang.Integer[] allValues = null;
-		java.lang.Integer expected = 0;
-		java.lang.Integer actual = pan.symflower.test.App.runCalculation(idx, allValues);
+	public void fib2() {
+		int n = 0;
+		int expected = 0;
+		int actual = pan.symflower.test.App.fib(n);
+
+		assertEquals(expected, actual);
+	}
+
+	@Test
+	public void fib3() {
+		int n = 11;
+		int expected = -1;
+		int actual = pan.symflower.test.App.fib(n);
+
+		assertEquals(expected, actual);
+	}
+
+	@Test
+	public void fib4() {
+		int n = 2;
+		int expected = 1;
+		int actual = pan.symflower.test.App.fib(n);
+
+		assertEquals(expected, actual);
+	}
+
+	@Test
+	public void makeFib5() {
+		int n = -1;
+		int[] expected = {  };
+		int[] actual = pan.symflower.test.App.makeFib(n);
 
 		assertTrue(EqualsBuilder.reflectionEquals(expected, actual, false, null, true));
 	}
 
 	@Test
-	public void runCalculation3() {
-		java.lang.Integer idx = 0;
-		java.lang.Integer[] allValues = null;
-		java.lang.Integer expected = 0;
-		java.lang.Integer actual = pan.symflower.test.App.runCalculation(idx, allValues);
+	public void makeFib6() {
+		int n = 0;
+		int[] expected = {  };
+		int[] actual = pan.symflower.test.App.makeFib(n);
 
 		assertTrue(EqualsBuilder.reflectionEquals(expected, actual, false, null, true));
 	}
 
 	@Test
-	public void runCalculation4() {
-		java.lang.Integer idx = 0;
-		java.lang.Integer[] allValues = {  };
-		java.lang.Integer expected = 0;
-		java.lang.Integer actual = pan.symflower.test.App.runCalculation(idx, allValues);
+	public void makeFib7() {
+		int n = 1;
+		int[] expected = { 0 };
+		int[] actual = pan.symflower.test.App.makeFib(n);
 
 		assertTrue(EqualsBuilder.reflectionEquals(expected, actual, false, null, true));
 	}
 
 	@Test
-	public void runCalculation5() {
-		java.lang.Integer idx = 0;
-		java.lang.Integer[] allValues = { null };
-		java.lang.Integer expected = 0;
-		java.lang.Integer actual = pan.symflower.test.App.runCalculation(idx, allValues);
-
-		assertTrue(EqualsBuilder.reflectionEquals(expected, actual, false, null, true));
-	}
-
-	@Test
-	public void runCalculation6() {
-		java.lang.Integer idx = 0;
-		java.lang.Integer[] allValues = { 0 };
-		java.lang.Integer expected = 0;
-		java.lang.Integer actual = pan.symflower.test.App.runCalculation(idx, allValues);
-
-		assertTrue(EqualsBuilder.reflectionEquals(expected, actual, false, null, true));
-	}
-
-	@Test
-	public void runCalculation7() {
-		java.lang.Integer idx = 715827904;
-		java.lang.Integer[] allValues = { 3 };
-		java.lang.Integer expected = -2147483584;
-		java.lang.Integer actual = pan.symflower.test.App.runCalculation(idx, allValues);
+	public void makeFib8() {
+		int n = 11;
+		int[] expected = {  };
+		int[] actual = pan.symflower.test.App.makeFib(n);
 
 		assertTrue(EqualsBuilder.reflectionEquals(expected, actual, false, null, true));
 	}
