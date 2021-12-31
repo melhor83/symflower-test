@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: pan.symflower.test.AppSymflowerTest
+-------------------------------------------------------------------------------
+Tests run: 7, Failures: 0, Errors: 1, Skipped: 0, Time elapsed: 0.041 s <<< FAILURE! - in pan.symflower.test.AppSymflowerTest
+runCalculation7(pan.symflower.test.AppSymflowerTest)  Time elapsed: 0.005 s  <<< ERROR!
+java.lang.reflect.InaccessibleObjectException: Unable to make field static final char[] java.lang.Integer.digits accessible: module java.base does not "opens java.lang" to unnamed module @32816a91
+	at pan.symflower.test.AppSymflowerTest.runCalculation7(AppSymflowerTest.java:71)
+
