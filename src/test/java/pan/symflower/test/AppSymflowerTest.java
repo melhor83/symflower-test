@@ -26,8 +26,8 @@ public class AppSymflowerTest {
 
 	@Test
 	public void fib3() {
-		int n = 151;
-		int expected = -1;
+		int n = 2;
+		int expected = 1;
 		int actual = pan.symflower.test.App.fib(n);
 
 		assertEquals(expected, actual);
@@ -35,8 +35,8 @@ public class AppSymflowerTest {
 
 	@Test
 	public void fib4() {
-		int n = 2;
-		int expected = 1;
+		int n = 31;
+		int expected = -1;
 		int actual = pan.symflower.test.App.fib(n);
 
 		assertEquals(expected, actual);
@@ -71,7 +71,7 @@ public class AppSymflowerTest {
 
 	@Test
 	public void makeFib8() {
-		int n = 151;
+		int n = 31;
 		int[] expected = {  };
 		int[] actual = pan.symflower.test.App.makeFib(n);
 

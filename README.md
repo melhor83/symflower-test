@@ -16,3 +16,7 @@ run with
 * Import Handling is disabled - i had to write everything by my own.
 * I was missing some more meaningful tests for inputs between 0 - UPPER_LIMIT to check against fibonacci series
 * custom output name of test class?
+* In a Maven Project, generated test sources should be under /target/generated-test-sources
+
+## Others
+A Build-Tool integration (like Maven/Gradle/..) would be very useful!
