@@ -26,7 +26,7 @@ public class AppSymflowerTest {
 
 	@Test
 	public void fib3() {
-		int n = 11;
+		int n = 151;
 		int expected = -1;
 		int actual = pan.symflower.test.App.fib(n);
 
@@ -71,7 +71,7 @@ public class AppSymflowerTest {
 
 	@Test
 	public void makeFib8() {
-		int n = 11;
+		int n = 151;
 		int[] expected = {  };
 		int[] actual = pan.symflower.test.App.makeFib(n);
 

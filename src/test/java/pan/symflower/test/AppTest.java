@@ -4,6 +4,9 @@ import static org.junit.Assert.assertArrayEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
 
+import java.util.Arrays;
+import java.util.stream.Collectors;
+
 import org.junit.Test;
 
 /**
@@ -23,6 +26,6 @@ public class AppTest {
     
     @Test
     public void makeFib() {
-        assertArrayEquals(new int[] {0, 1, 1, 2, 3, 5, 8, 13, 21}, App.makeFib(9));
+        assertArrayEquals(new int[] {0, 1, 1, 2, 3, 5, 8, 13, 21, 34}, App.makeFib(10));
     }
 }

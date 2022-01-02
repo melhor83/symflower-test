@@ -6,7 +6,11 @@ package pan.symflower.test;
  */
 public class App {
 
-    private static final int UPPER_LIMIT = 10;
+    private App() {
+        // unused
+    }
+
+    public static final int UPPER_LIMIT = 30;
 
     public static int fib(int n) {
         if (n <= 1)
@@ -34,13 +38,7 @@ public class App {
 
     // had to write my own as import handling ist disabled
     private static boolean arrayEquals(int[] first, int[] second) {
-        if (first == null) {
-            return second == null;
-        }
         if (second == null) {
-            return false;
-        }
-        if (first.length != second.length) {
             return false;
         }
         for(int i = 0; i < first.length; i++) {
